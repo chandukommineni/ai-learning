@@ -25,6 +25,9 @@ it('supports custom delimiter via //[delim]\n prefix', () => {
   expect(add('//;\n1;2')).toBe(3);
   expect(add('//-\n1-2-3')).toBe(6);
 });
+it('throws for negative numbers listing all negatives', () => {
+  expect(() => add('1,-2,3,-4')).toThrow('negatives not allowed: -2,-4');
+});
 
 
 });
