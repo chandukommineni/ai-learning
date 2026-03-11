@@ -1,5 +1,4 @@
 export function fizzBuzz(n: number): string {
-  if (n % 3 === 0) return 'Fizz';
-  if (n % 5 === 0) return 'Buzz';
-  return String(n);
+  const result = (n % 3 === 0 ? 'Fizz' : '') + (n % 5 === 0 ? 'Buzz' : '');
+  return result || String(n);
 }
