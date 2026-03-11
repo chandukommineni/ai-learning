@@ -10,7 +10,7 @@ export function add(numbers: string): number {
     body = rest.join('\n');
   }
 
-const nums = body.split(delimiter).map(n => parseInt(n, 10));
+const nums = body.split(delimiter).map(n => parseInt(n, 10)).filter(n => n <= 1000);
 const negatives = nums.filter(n => n < 0);
 if (negatives.length) throw new Error(`negatives not allowed: ${negatives.join(',')}`);
 return nums.reduce((sum, n) => sum + n, 0);
