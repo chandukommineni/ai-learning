@@ -1,3 +1,4 @@
 export function isPalindrome(s: string): boolean {
-  return s === s.split('').reverse().join('');
+  const normalized = s.toLowerCase();
+  return normalized === normalized.split('').reverse().join('');
 }

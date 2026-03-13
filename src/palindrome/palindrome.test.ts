@@ -19,4 +19,9 @@ describe('Palindrome', () => {
     expect(isPalindrome('hello')).toBe(false);
     expect(isPalindrome('world')).toBe(false);
   });
+
+  it('is case-insensitive', () => {
+    expect(isPalindrome('Racecar')).toBe(true);
+    expect(isPalindrome('Madam')).toBe(true);
+  });
 });
