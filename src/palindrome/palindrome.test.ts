@@ -9,4 +9,9 @@ describe('Palindrome', () => {
   it('returns true for a single character', () => {
     expect(isPalindrome('a')).toBe(true);
   });
+
+  it('returns true for a multi-character palindrome', () => {
+    expect(isPalindrome('racecar')).toBe(true);
+    expect(isPalindrome('madam')).toBe(true);
+  });
 });
