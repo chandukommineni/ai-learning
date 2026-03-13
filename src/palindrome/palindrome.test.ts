@@ -14,4 +14,9 @@ describe('Palindrome', () => {
     expect(isPalindrome('racecar')).toBe(true);
     expect(isPalindrome('madam')).toBe(true);
   });
+
+  it('returns false for a non-palindrome', () => {
+    expect(isPalindrome('hello')).toBe(false);
+    expect(isPalindrome('world')).toBe(false);
+  });
 });
