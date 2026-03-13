@@ -9,4 +9,8 @@ describe('LeapYear', () => {
   it('returns true for a year divisible by 4', () => {
     expect(isLeapYear(2004)).toBe(true);
   });
+
+  it('returns false for a year divisible by 100 but not 400', () => {
+    expect(isLeapYear(1900)).toBe(false);
+  });
 });
