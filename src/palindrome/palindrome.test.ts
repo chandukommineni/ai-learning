@@ -24,4 +24,10 @@ describe('Palindrome', () => {
     expect(isPalindrome('Racecar')).toBe(true);
     expect(isPalindrome('Madam')).toBe(true);
   });
+
+  it('ignores spaces and punctuation', () => {
+    expect(isPalindrome('A man, a plan, a canal: Panama')).toBe(true);
+    expect(isPalindrome("Was it a car or a cat I saw?")).toBe(true);
+    expect(isPalindrome('hello, world!')).toBe(false);
+  });
 });
