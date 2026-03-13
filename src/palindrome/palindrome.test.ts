@@ -5,4 +5,8 @@ describe('Palindrome', () => {
   it('returns true for an empty string', () => {
     expect(isPalindrome('')).toBe(true);
   });
+
+  it('returns true for a single character', () => {
+    expect(isPalindrome('a')).toBe(true);
+  });
 });
