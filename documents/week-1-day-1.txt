@@ -1,0 +1,65 @@
+LLMs, Prompt Engineering & AI Concepts
+
+1.  What are LLMs and how they process text
+
+LLMs (Large Language Models) are AI systems trained on large amounts of
+text data to predict the next token in a sequence.
+
+How they work: - Input text is split into tokens - Tokens are converted
+into numbers - Passed through a Transformer neural network - Model
+predicts next token repeatedly to generate output
+
+They do not truly understand language but learn statistical patterns.
+
+2.  Tokens and Context Window
+
+Tokens: Small pieces of text such as words, subwords, or characters.
+
+Example: “I love AI” → [“I”, ” love”, ” AI”]
+
+Context Window: The maximum number of tokens the model can process at
+once. If exceeded, older parts of the input are forgotten.
+
+3.  10 Progressively Better Prompts
+
+  Explain AI
+
+  Explain AI in simple terms
+
+  Explain AI to a beginner
+
+  Explain AI to a beginner with examples
+
+  Explain AI to a beginner with 3 examples in under 200 words
+
+  You are a teacher. Explain AI to a beginner with 3 simple examples
+
+  You are a teacher. Explain AI with bullet points and real-life
+    examples
+
+  You are an AI tutor. Explain AI step-by-step with analogies
+
+ Explain AI including definition, examples, analogy, under 150 words
+
+   Act as an AI educator. Teach AI using simple language, analogies,
+    examples, and a quiz
+
+4. 3 AI Limitations
+
+ Hallucination: Example: Saying Sydney is the capital of Australia
+    (incorrect).
+
+ Limited Context: Long conversations cause earlier instructions to be
+    forgotten.
+
+ Reasoning Errors
+
+5. Few-Shot Learning Example
+
+Classify sentiment:
+
+Text: I love this product Sentiment: Positive
+
+Text: This is the worst experience ever Sentiment: Negative
+
+Text: It was okay, nothing special Sentiment: Neutral
